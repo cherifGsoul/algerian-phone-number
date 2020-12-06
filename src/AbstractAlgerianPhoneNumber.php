@@ -13,7 +13,7 @@ abstract class AbstractAlgerianPhoneNumber
         $this->setNumber($number);
     }
 
-    public static function fromString(string $number)
+    public static function fromString(string $number): self
     {
         $number = preg_replace("/\s|-+/", "", $number);
 
