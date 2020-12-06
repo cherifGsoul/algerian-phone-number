@@ -1,0 +1,6 @@
+formatter.name: pretty
+suites:
+    phone_number:
+      namespace: Cherif\AlgerianPhoneNumber
+      psr4_prefix: Cherif\AlgerianPhoneNumber
+      src_path: ./src

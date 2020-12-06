@@ -1,0 +1,21 @@
+{
+    "name": "cherif/algerian-phone-number",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cherif BOUCHELAGHEM",
+            "email": "cherif.bouchelaghem@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cherif\\AlgerianPhoneNumber\\": "src/"
+        }
+    }
+}
