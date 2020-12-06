@@ -27,4 +27,11 @@ class AlgerianPhoneNumberSpec extends ObjectBehavior
         $this->beConstructedThrough('fromString', ['foo']);
         $this->shouldThrow(InvalidAlgerianPhoneNumberException::class)->duringInstantiation();
     }
+
+    function it_is_immutable()
+    {
+        $this->beConstructedFromString('038525564');
+        $other = $this->withNumber('023525564');
+        $this->shouldNotBe($other);
+    }
 }

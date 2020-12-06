@@ -50,4 +50,9 @@ final class AlgerianPhoneNumber
             }
         }
     }
+
+    public function withNumber(string $number)
+    {
+        return AlgerianPhoneNumber::fromString($number);
+    }
 }
